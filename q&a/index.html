@@ -7,7 +7,6 @@
     <style>
         .answer { display: none; }
         .question:hover + .answer { display: block; }
-        .question:active + .answer { display: block; }
     </style>
     <title>Q&A - Inkin6779</title>
 </head>
@@ -20,7 +19,7 @@
         </div>
     </header>
     <div>
-        <span class="question">What is your favorite Pokémon?</span>
+        <span class="question" onclick="this.nextElementSibling.style.display='block'">What is your favorite Pokémon?</span>
         <span class="answer">Stuck between Giritina, and Yveltal (Yveltal as original, and Giritina being newer)</span>
     </div>
 </body>
