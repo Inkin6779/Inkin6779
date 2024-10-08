@@ -6,6 +6,21 @@
     <meta name="google-site-verification" content="oImVzN7jZVDEllg4eguDpxoEtKSC8vRficN0ZU3IwBQ" />
     <link rel="shortcut icon" type="image/png" href="download.png"/>
     <title>Inkin6779's Site</title>
+    <audio id="myAudio" autoplay>
+        <source src="audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          var audio = document.getElementById('myAudio');
+          audio.muted = true; // Mute the audio to bypass autoplay restriction
+          audio.play().then(function() {
+            audio.muted = false; // Unmute after playing
+          }).catch(function(error) {
+            console.log('Playback failed:', error);
+          });
+        });
+      </script>
     <script>
         function toggleDropdown(dropdownClass) {
             var dropdownContent = document.querySelector(dropdownClass);
@@ -14,9 +29,6 @@
     </script>
 </head>
 <body>
-    <audio id="player" autoplay loop>
-        <source src="audio/audio.mp3" type="audio/mp3">
-    </audio>
     <header>
         <div style="text-align: center;">
             <h1>Hey!</h1>
