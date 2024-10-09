@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/jpeg" href="favicon.jpg"/>
+    <style>
+        .answer { display: none; }
+        .question:hover + .answer { display: block; }
+    </style>
+    <title>Q&A - Inkin6779</title>
+    <audio id="myAudio" autoplay loop>
+        <source src="audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          var audio = document.getElementById('myAudio');
+          audio.muted = true; // Mute the audio to bypass autoplay restriction
+          audio.play().then(function() {
+            audio.muted = false; // Unmute after playing
+          }).catch(function(error) {
+            console.log('Playback failed:', error);
+          });
+        });
+      </script>
+</head>
+<body>
+    <header>
+        <div style="text-align: center;">
+          <p><a href="https://www.youtube.com/watch?v=_5hV2j6VDU8">Song Playing: Friday Night Funkin' Lullaby's Pause Theme</a></p>
+            <h1>Project School Stash</h1>
+            <h2>My other site. For video games, and directories to said games.</h2>
+            <button onclick="window.location.href='/project-school-stash/';">Use Now!</button>
+        </div>
+    </header>
+    <div style="text-align: center;">
+      <p>This site was built with the inspiration of <a href="hhttps://sites.google.com/view/classroom6x/">Classroom 6x</a></p>. However, I want to keep it updated with new (or as new as possible) games, like with Bloons.</p>
+    </div>
+<footer>
+    <div style="text-align: center;">
+        <p> <a href="https://inkin6779.github.io/Inkin6779/">Retreat back to Home</a></p>
+    </div>
+</footer>
+</body>
+</html>
